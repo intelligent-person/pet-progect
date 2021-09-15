@@ -14,7 +14,7 @@ const ProfileStatus = (props) => {
 
     const deactivateEditMode = () => {
         setEditMode(false)
-        props.updateStatus(props.status)
+        props.updateStatus(status)
     }
 
     const onPostChange = (e) => [
