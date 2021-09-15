@@ -16,7 +16,7 @@ const ProfileInfo = (props) => {
                 {/*        src='https://images.pexels.com/photos/248797/pexels-photo-248797.jpeg?auto=compress&cs=tinysrgb&h=350'/>*/}
                 {/*</div>*/}
                 <div className={s.descriptionBlock}>
-                    <img className={s.ava} src={props.profile.photos.small != null ? props.profile.photos.small : userPhoto}/>
+                    <img className={s.ava} src={props.profile.photos.large != null ? props.profile.photos.large : userPhoto}/>
                 </div>
                 <div><h2>{props.profile.fullName != null ? props.profile.fullName : 'No Name'}</h2></div>
                 <div><h4>{props.profile.aboutMe != null ? props.profile.aboutMe : ''}</h4></div>
