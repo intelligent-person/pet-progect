@@ -1,0 +1,12 @@
+.descriptionBlock {
+    padding: 10px;
+}
+
+.ava {
+    width: 200px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}

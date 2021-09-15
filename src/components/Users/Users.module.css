@@ -1,0 +1,12 @@
+.ava img{
+    width: 100px;
+}
+
+.selectedPage {
+    font-weight: bold;
+}
+
+span:hover {
+    cursor: pointer;
+}
+
