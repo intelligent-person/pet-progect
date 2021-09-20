@@ -10,3 +10,7 @@
     display: grid;
     grid-template-columns: 1fr 4fr;
 }
+
+.contact {
+    padding-left: 20px;
+}
