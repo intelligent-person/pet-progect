@@ -1,14 +1,25 @@
 .nav {
     grid-area: n;
-    background-color: burlywood;
+    background-color: #f1f2f6;
     padding: 20px;
+    display: grid;
+    grid-template-areas: 'a b';
+    grid-template-columns: 1fr 130px;
+}
+
+.items {
+    grid-area: b;
+}
+
+.item {
+    width: 100%;
 }
 
 .item a {
-    color: white;
+    color: #507298;
     text-decoration: none;
 }
 
 .item a.activeLink {
-    color: gold;
+    font-weight: bold;
 }

@@ -1,20 +1,35 @@
 .header {
     grid-area: h;
-    background-color: green;
-}
-
-.header img {
-    width: 20px;
+    background-color: #507298;
+    display: grid;
+    grid-template-areas: 'b icon a log';
+    grid-template-columns: 150px 200px auto 200px;
+    align-items: center;
 }
 
 .loginBlock {
-    float: right;
-    margin-right: 30px;
-    margin-top: 15px;
-}
-
-.loginBlock a {
+    grid-area: log;
     color: white;
     text-decoration: none;
+}
+
+.loginBlock img {
+    width: 15px;
+}
+
+.icon {
+    grid-area: icon;
+    width: 40px;
+}
+
+.button {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    margin-left: 10px;
 }
 

@@ -1,34 +1,15 @@
 .app-wrapper {
-    margin: 0 auto;
     display: grid;
-    width: 1200px;
-    grid-template-areas: "h h" "n c";
+    width: 100%;
+    grid-template-areas: "h h h" "n c a";
 
-    grid-template-rows: 60px 1fr;
-    grid-template-columns: 2fr 10fr;
-    /* grid-gap: 10px; */
+    grid-template-rows: 50px 1fr;
+    grid-template-columns: 20% 1fr 15%;
+    height: 100vh;
+    margin: 0;
 }
 
 .app-wrapper-content {
     grid-area: c;
-    background-color: cornflowerblue;
+    background-color: #f1f2f6;
 }
-
-
-
-
-
-
-
-
-
-
-/*
-
-/messages
-/dialogs
-
-/dialogs/3
-/dialogs/2
-
-*/

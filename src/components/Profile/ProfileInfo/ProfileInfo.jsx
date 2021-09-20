@@ -50,20 +50,19 @@ const ProfileData = (props) => {
     return (
         <div>
             {props.isOwner && <div><button onClick={props.goToEditMode}>Edit</button></div>}
-            <div><b>Full name: </b>{props.profile.fullName != null ? props.profile.fullName : 'No Name'}</div>
+            <div>{props.profile.fullName != null ? props.profile.fullName : 'No Name'}</div>
             <div><b>Looking for a job:</b> {props.profile.lookingForAJob ? "Yes" : "No"}</div>
             {props.profile.lookingForAJob &&
             <div><b>My professional skills:</b> {props.profile.lookingForAJobDescription}</div>}
             <div><b>About me:</b> {props.profile.aboutMe}</div>
             <div>Contacts: {Object.keys(props.profile.contacts).map(key => {
-                return <Contact key={key} contactTitle={key} contactValue={props.profile.contacts[key]}/>
+                    return <Contact key={key} contactTitle={key} contactValue={props.profile.contacts[key]}/>
             })}</div>
         </div>
     )
 }
 
 const Contact = ({contactTitle, contactValue}) => {
-    return <div><b>{contactTitle}</b>: <a href={contactValue}>{contactValue}</a></div>
-}
+     return <div><b>{contactTitle}</b>: <a href={contactValue}>{contactValue}</a></div>}
 
 export default ProfileInfo;
